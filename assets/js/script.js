@@ -23,11 +23,10 @@ currentDay.textContent = timeNow
 // var saveTasks = function () {
 //     localStorage.setItem("tasks", JSON.stringify(tasks));
 //   };
-localStorage.setItem('timeBlock');
-saveBtn.onclick = function(){};
-   saveBtn.addEventHandler('click', setItem.localStorage );
 
-// localStorage.setItem or .getItem ?
+saveBtn.onclick = function(){};
+   saveBtn.addEventListener('click', function(){
+    localStorage.setItem('timeBlo
 
 // var loadTasks = function () {
 //     tasks = JSON.parse(localStorage.getItem("tasks"));
