@@ -1,11 +1,24 @@
-// var timeBlocks = ['9:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '1:00 PM', '2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM']
+//display todays date
+let date = new Date()
+let day = date.getDate();
+let month = date.getMonth()+1;
+let year = date.getFullYear();
 
-// var currentTime = moment();
-// moment().format("MMM Do YY");              
-// var displayTime = function() {
-    
-//     document.getElementById('currentDay').textContent = 
-//     currentTime.format('m/d/y, h:m:s');
-// }
+let fullDate = `${day}.${month}.${year}.`;
+console.log(fullDate);
 
-// displayTime();
+// currentDay=
+// var yyyy = today. getFullYear(); today = mm + '/' + dd + '/' + yyyy; document. write(today); 
+
+
+
+//organize time blocks by past present and future
+
+
+
+//save button click saves event to local storage
+
+
+
+//saved events stay on the page after refresh
+
