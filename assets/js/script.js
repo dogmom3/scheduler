@@ -1,14 +1,14 @@
 //display todays date
-let date = new Date()
-let day = date.getDate();
-let month = date.getMonth()+1;
-let year = date.getFullYear();
+var currentDay = document.getElementById('current-day');
 
-let fullDate = `${day}.${month}.${year}.`;
-console.log(fullDate);
+function (currentDay){
+const timeNow = new Date();
+console.log(timeNow); 
+}
 
-// currentDay=
-// var yyyy = today. getFullYear(); today = mm + '/' + dd + '/' + yyyy; document. write(today); 
+currentDay //id for div where time should display
+
+
 
 
 
@@ -18,6 +18,8 @@ console.log(fullDate);
 
 //save button click saves event to local storage
 
+
+// document.getElementById('startbtn').addEventListener('click', function(event) )
 
 
 //saved events stay on the page after refresh
