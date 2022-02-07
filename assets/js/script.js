@@ -1,15 +1,15 @@
 //variable declarations
-var currentDay = document.getElementById('current-day');
+var currentDate =moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
 var timeBlock = document.getElementsByClassName('time-block');
 var saveBtn = document.getElementsByClassName('saveBtn');
 
 //display todays date
-const timeNow = new Date();
+
 console.log(timeNow);
-currentDay.textContent = timeNow
+currentDate.textContent = timeNow
 
 let hours = timeNow.getHours();
-
+currentHour = 
 
 //function to load tasks
 $('textarea').each(function () {
