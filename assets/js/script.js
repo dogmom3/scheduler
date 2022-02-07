@@ -28,27 +28,34 @@ $('.saveBtn').on('click', function () {
     localStorage.setItem($('this').siblings('.hour').attr('id'), saveTask);
   });
 
+  saveBtn.onclick = (){
+    saveBtn.addEventListener('click', function(){
+        e.event.preventDefault();
+        localStorage.setItem()
+        console.log('clicked')
+    });
+
   //function to load tasks
   var loadTasks = function () {
+      
     var nine = localStorage.getItem("9");
-    $("#9").siblings(".time-block").val(nine);
+    
     var ten = localStorage.getItem("10");
-    $("#10").siblings(".time-block").val(ten);
+  
     var eleven = localStorage.getItem("11");
-    $("#11").siblings(".time-block").val(eleven);
+   
     var twelve = localStorage.getItem("12");
-    $("#12").siblings(".time-block").val(twelve);
+   
     var one = localStorage.getItem("1");
-    $("#1").siblings(".time-block").val(one);
+   
     var two = localStorage.getItem("2");
-    $("#2").siblings(".time-block").val(two);
+
     var three = localStorage.getItem("3");
-    $("#3").siblings(".time-block").val(three);
+
     var four = localStorage.getItem("4");
-    $("#4").siblings(".time-block").val(four);
+
     var five = localStorage.getItem("5");
-    $("#5") .siblings(".time-block").val(five);
-  };
+    
 
     // tasks = JSON.parse(localStorage.getItem("tasks"));
     //   saveBtn.addEventListener('click', onClick)
@@ -64,13 +71,8 @@ $('.saveBtn').on('click', function () {
 //     localStorage.setItem("tasks", JSON.stringify(tasks));
 //   };
 
-saveBtn.onclick = function(){
-   saveBtn.addEventListener('click', function(){
-       console.log('clicked')
-   });
+
 }
 
-//saved events stay on the page after refresh
-// event.preventDefault();
-
+saveBtn.onclick();
 loadTasks();
