@@ -1,25 +1,25 @@
 //variable declarations
-var currentDate =moment().format("dddd, MMM D YYYY, h:mm:ss a");
+var currentDay = document.getElementById('current-day');
 var timeBlock = document.getElementsByClassName('time-block');
 var saveBtn = document.getElementsByClassName('saveBtn');
 
 //display todays date
-let currentHour = currentDate.getHours();
-console.log(currentDate);
-currentDate.textContent = currentHour
+const timeNow = new Date();
+console.log(timeNow);
+currentDay.textContent = timeNow
 
-
-
+let hours = timeNow.getHours();
+currentHour = 
 
 //function to load tasks
 $('textarea').each(function () {
 
-    if (currentHour < timeNow) {
+    if (hours < timeNow) {
         $('textarea').addClass('past');
         $('textarea').removeClass('present');
         $('textarea').removeClass('future');
     }
-    else if (currentHour === timeNow) {
+    else if (hours === timeNow) {
         $('textarea').addClass('present');
         $('textarea').removeClass('past');
         $('textarea').removeClass('future');
