@@ -8,7 +8,7 @@
 
 * SO THAT I can be more efficient with my time.
 
-![Image file](scheduler.png)
+![Image file](images/scheduler.png)
 
 *DEPLOYED APPLICATION HERE:
  https://dogmom3.github.io/scheduler/
