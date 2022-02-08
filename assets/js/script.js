@@ -1,17 +1,11 @@
-//variable declarations
 var currentDay = $('#current-day');
 var timeBlock = $('.time-block');
 var saveBtn = $('.saveBtn');
 
-
-//display todays date
 var timeNow = new Date();
-
-currentDay.textContent = timeNow
-
+currentDay.text(timeNow)
 let hours = timeNow.getHours();
 
-//function to load tasks
 $('textarea').each(function () {
     var currentTimeId = parseInt($(this).attr('id'))
 
@@ -30,13 +24,15 @@ $('textarea').each(function () {
         $(this).removeClass('past');
         $(this).removeClass('present');
     }
-    var loadTask = localStorage.getItem($(this).siblings('h2').attr('id'))
+    var loadTask = localStorage.getItem($(this).attr('id'))
     $(this).val(loadTask);
 })
 
-//save button click saves event to local storage
 $('.saveBtn').click(function () {
-    localStorage.setItem($(this).siblings('h2').attr('id'), $(this).siblings('.description').val());
+    console.log($(this).siblings('textarea').attr('id'))
+    console.log( $(this).siblings('.description').val())
+
+    localStorage.setItem($(this).siblings('textarea').attr('id'), $(this).siblings('.description').val());
     console.log('clicked');
 });
 
