@@ -1,7 +1,6 @@
 var currentDay = $('#current-day');
 var timeBlock = $('.time-block');
 var saveBtn = $('.saveBtn');
-
 var timeNow = new Date();
 currentDay.text(timeNow)
 let hours = timeNow.getHours();
@@ -30,9 +29,8 @@ $('textarea').each(function () {
 
 $('.saveBtn').click(function () {
     console.log($(this).siblings('textarea').attr('id'))
-    console.log( $(this).siblings('.description').val())
-
-    localStorage.setItem($(this).siblings('textarea').attr('id'), $(this).siblings('.description').val());
+    console.log( $(this).siblings('.time-block').val())
+    localStorage.setItem($(this).siblings('textarea').attr('id'), $(this).siblings('.time-block').val());
     console.log('clicked');
 });
 
