@@ -1,10 +1,43 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1;
 }
 
-textarea{
+.jumbotron {
+  text-align: center;
+  background-image: linear-gradient(to bottom right, orchid,turquoise, mediumorchid,aqua,blue);
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+.row {
+  display:flex;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;;
+}
+
+.hour {
+  background-color:lavender;
+  color: black;
+  font-weight: bold;
+  border-style: ridge;
+  border-color: orchid;
+  border-width: 5px;
+  border-radius: 10px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+textarea {
+  display:flex;
+  flex-wrap: wrap;
   background: transparent;
   border: ridge;
   border-radius: 15px;
@@ -14,49 +47,7 @@ textarea{
   border-color: black;
   padding: 10px;
   font-size: 20px;
-}
-
-.jumbotron {
-  text-align: center;
-  background-color: grey;
-  color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
-}
-
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
-}
-
-.hour {
-  background-color: plum;
-  color: black;
-  font-weight: bold;
-  border-style: ridge;
-  border-color: orchid;
-  border-width: 5px;
-  border-radius: 10px;
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.past {
-  background-color: lavender;
-  color: black;
-}
-
-.present {
-  background-color: magenta;
-  color: black;
-}
-
-.future {
-  background-color: lightcyan;
-  color:black;
+  text-transform: capitalize;
 }
 
 .saveBtn {
@@ -65,14 +56,33 @@ textarea{
   border-bottom-right-radius: 15px;
   border-style: ridge;
   border-width: 5px;
-  border-color: orchid;
-  background-color: purple;
-  color: white;
+  border-color: blue;
+  background-color: turquoise;
+  color: black;
+  font-weight: bold;
 }
 
 .saveBtn:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+.past {
+  background-color: lightskyblue;
+  color: black;
+}
+
+.present {
+  background-color: orchid;
+  color: black;
+}
+
+.future {
+  background-color:mediumorchid;
+  color:black;
+}
+
+
+
 
 

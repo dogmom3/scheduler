@@ -3,7 +3,7 @@ var timeBlock = $('.time-block');
 var saveBtn = $('.saveBtn');
 var timeNow = new Date();
 currentDay.text(timeNow)
-let hours = timeNow.getHours();
+let hours = timeNow.getHours("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric" });
 
 $('textarea').each(function () {
     var currentTimeId = parseInt($(this).attr('id'))
